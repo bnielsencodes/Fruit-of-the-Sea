@@ -28,5 +28,27 @@ startButton.addEventListener('click', (e) => {
 });
 
 function getRandomPhraseAsArray(arr) {
-
+  const randomNumber = Math.floor(Math.random() * phrases.length)
+  let phrase = arr[randomNumber];
+  console.log(phrase);
+  return phrase;
 };
+
+const randomPhrase = getRandomPhraseAsArray(phrases);
+
+function addPhraseToDisplay(arr) {
+  for (let i = 0; i < arr.length; i += 1) {
+    let letter = arr[i];
+    const li = document.createElement('li');
+    const span = document.createElement('span');
+    li.textContent = letter;
+    phrase.appendChild(li);
+    if (letter === " ") {
+      li.className = 'space';
+    } else {
+      li.className = 'letter';
+    }
+  }
+}
+
+addPhraseToDisplay(randomPhrase);
