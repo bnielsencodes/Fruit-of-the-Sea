@@ -105,6 +105,7 @@ function reloadGame() {
   });
 }
 
+// check win or loss and replay
 function checkWin() {
   const show = document.querySelectorAll('.show');
   const letter = document.querySelectorAll('.letter');
