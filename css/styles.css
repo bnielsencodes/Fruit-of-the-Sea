@@ -13,6 +13,7 @@
   --color-keys-light: #e5e5e5;
   --font-size-large: 60px;
   --font-size-medium: 20px;
+  --font-size-small: 18px;
   --transition: all 0.2s ease-in-out;
 }
 
@@ -41,6 +42,14 @@ h2 {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-size: var(--font-size-large);
+  margin: 0;
+}
+
+.subheading {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--font-size-small);
   margin: 0;
 }
 
@@ -73,7 +82,8 @@ button {
 
 /* Title */
 
-.header {
+.header,
+.subheading {
   color: var(--color-start);
 }
 
